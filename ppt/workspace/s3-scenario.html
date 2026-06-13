@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #0A0E17; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  background: #0A0E17; font-family: Arial, sans-serif;
+}
+.top-accent { width: 100%; height: 4pt; background: #E8612A; }
+.main { flex: 1; display: flex; margin: 15pt 35pt 10pt 35pt; gap: 20pt; }
+.left { width: 340pt; }
+h2 { color: #FFFFFF; font-size: 20pt; margin: 0 0 8pt 0; }
+h3 { color: #E8612A; font-size: 11pt; margin: 8pt 0 3pt 0; }
+p { color: #B0B8C0; font-size: 9pt; margin: 2pt 0; line-height: 1.5; }
+b { color: #FF9A5C; }
+.formula { color: #2AA9C9; font-size: 9pt; margin: 3pt 0; }
+.right { width: 310pt; display: flex; align-items: center; justify-content: center; }
+.img-box { width: 300pt; height: 200pt; background: #1A2740; border: 1pt solid #2A3A50; border-radius: 4pt; }
+</style>
+</head>
+<body>
+<div class="top-accent"></div>
+<div class="main">
+  <div class="left">
+    <h2>模拟场景</h2>
+    <h3>场景设定：一个火星年（300天），两场沙尘暴</h3>
+    <p>风暴1：第60-120天，τ=2.5，太阳能跌至17%</p>
+    <p>风暴2：第200-235天，τ=2.2</p>
+    <h3>基地参数</h3>
+    <p>3000度电池（够10天全功率运行）、500公斤存氧（6人呼吸99天）</p>
+    <p>6名乘员，舱内20°C，岩壁−20°C</p>
+    <p>四种随机故障（各1%/天）：电解退化、加热器故障、电池失效、舱体泄漏</p>
+    <h3>核心健康指标</h3>
+    <p class="formula">S(t) = 0.40×电量比例 + 0.35×氧气比例 + 0.25×温度评分</p>
+    <p>电力权重最大（制氧和供暖都靠电），S &lt; 0.05 → 致命终止</p>
+  </div>
+  <div class="right">
+    <div id="img-3" class="placeholder" style="width: 300pt; height: 210pt;"></div>
+  </div>
+</div>
+</body>
+</html>

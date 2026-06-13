@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #0A0E17; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  background: #0A0E17; font-family: Arial, sans-serif;
+}
+.top-accent { width: 100%; height: 4pt; background: #E8612A; }
+.main { flex: 1; display: flex; margin: 12pt 30pt 8pt 30pt; gap: 15pt; }
+.left { width: 330pt; }
+h2 { color: #FFFFFF; font-size: 20pt; margin: 0 0 6pt 0; }
+h3 { color: #E8612A; font-size: 11pt; margin: 7pt 0 3pt 0; }
+p { color: #B0B8C0; font-size: 9pt; margin: 2pt 0; line-height: 1.5; }
+b { color: #FF9A5C; }
+.quote { color: #2AA9C9; font-size: 9pt; margin: 3pt 0 3pt 10pt; border-left: 2pt solid #E8612A; padding-left: 8pt; }
+.right { width: 340pt; display: flex; align-items: center; justify-content: center; }
+.img-box { width: 330pt; height: 210pt; background: #1A2740; border: 1pt solid #2A3A50; border-radius: 4pt; }
+table { border-collapse: collapse; margin: 5pt 0; width: 100%; }
+td, th { color: #B0B8C0; font-size: 8pt; padding: 4pt 6pt; border: 0.5pt solid #2A3A50; }
+th { background: #1A2740; color: #FF9A5C; }
+</style>
+</head>
+<body>
+<div class="top-accent"></div>
+<div class="main">
+  <div class="left">
+    <h2>我们怎么做？</h2>
+    <h3>三个AI分头管理，共享一个目标</h3>
+    <table>
+      <tr><th>AI角色</th><th>管什么</th><th>范围</th></tr>
+      <tr><td>电力管理</td><td>生命保障</td><td>0-30kW</td></tr>
+      <tr><td>热控管理</td><td>舱内供暖</td><td>0-20kW</td></tr>
+      <tr><td>科学管理</td><td>实验载荷</td><td>0-25kW</td></tr>
+    </table>
+    <p>共享奖励：活得久加分，S(t)高加分，风暴省电加分，人死了扣500</p>
+    <h3>核心算法：MAPPO</h3>
+    <p>架构：<b>中心化训练 + 去中心化执行</b></p>
+    <div style="border-left: 2pt solid #E8612A; padding-left: 8pt; margin: 3pt 0 3pt 10pt;">
+    <p style="color: #2AA9C9; font-size: 9pt; margin: 0;">"总教练"看到全局——哪个AI耗电影响别人、废热可被利用——指导各AI学习，执行时AI只看自己信息</p>
+  </div>
+    <p>用tanh约束动作范围防作弊，训练30万次模拟，γ=0.995</p>
+  </div>
+  <div class="right">
+    <div id="img-4" class="placeholder" style="width: 330pt; height: 220pt;"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{mars_radiation}
+\citation{mars_lava_tube}
+\citation{mars_dust}
+\citation{marl_survey}
+\@writefile{toc}{\contentsline {section}{\numberline {1}引言与研究背景}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}火星地下熔岩管的工程价值}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}沙尘暴期间的自主决策问题}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}物理模型与参数依据}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}生存稳定度指数}{4}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:S}{{1}{4}{生存稳定度指数}{equation.1}{}}
+\citation{kilopower}
+\citation{mars_thermal}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}太阳电力输入}{5}{subsection.2.2}\protected@file@percent }
+\newlabel{eq:solar}{{2}{5}{太阳电力输入}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}热动力学}{5}{subsection.2.3}\protected@file@percent }
+\newlabel{eq:thermal}{{3}{5}{热动力学}{equation.3}{}}
+\citation{mars_isru}
+\citation{nasa_ls}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}氧气质量平衡}{6}{subsection.2.4}\protected@file@percent }
+\newlabel{eq:o2}{{4}{6}{氧气质量平衡}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}电池能量平衡}{6}{subsection.2.5}\protected@file@percent }
+\newlabel{eq:battery}{{5}{6}{电池能量平衡}{equation.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}MARL架构设计}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}智能体分解}{6}{subsection.3.1}\protected@file@percent }
+\citation{mappo}
+\citation{gae}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}MAPPO算法与动作边界}{7}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:tanh}{{6}{7}{MAPPO算法与动作边界}{equation.6}{}}
+\newlabel{eq:ppo}{{7}{7}{MAPPO算法与动作边界}{equation.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}训练超参数}{7}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces 训练超参数}}{7}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:hparams}{{1}{7}{训练超参数}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}仿真场景}{8}{section.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces 基地配置参数}}{8}{table.caption.2}\protected@file@percent }
+\newlabel{tab:scenario}{{2}{8}{基地配置参数}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}实验结果}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}步骤1：静态基线}{9}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 步骤1：静态基线（50回合）}}{9}{table.caption.3}\protected@file@percent }
+\newlabel{tab:step1}{{3}{9}{步骤1：静态基线（50回合）}{table.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 静态规则智能体的资源轨迹（完整存活至300\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces sols的代表性回合）。第一场风暴（sol\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces 60--120，橙色阴影）期间电池持续下降，风暴2（sol\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces 200--235，红色阴影）可见光功率二次探底。温度在风暴期间逐步下降至接近可生存下限。两条轨迹曲线全程可见，展示完整的0--250\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces sols时间范围。}}{9}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:traj}{{1}{9}{静态规则智能体的资源轨迹（完整存活至300~sols的代表性回合）。第一场风暴（sol~60--120，橙色阴影）期间电池持续下降，风暴2（sol~200--235，红色阴影）可见光功率二次探底。温度在风暴期间逐步下降至接近可生存下限。两条轨迹曲线全程可见，展示完整的0--250~sols时间范围。}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}步骤2：MAPPO训练}{10}{subsection.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 训练曲线。左：每轮平均回合奖励，浅色为原始值、深蓝为移动平均、虚线为线性趋势（$r = +0.775$）。右：评论家损失稳定收敛。}}{10}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:training}{{2}{10}{训练曲线。左：每轮平均回合奖励，浅色为原始值、深蓝为移动平均、虚线为线性趋势（$r = +0.775$）。右：评论家损失稳定收敛。}{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces 步骤2：MARL vs.\ 静态基线（100回合）}}{10}{table.caption.6}\protected@file@percent }
+\newlabel{tab:step2}{{4}{10}{步骤2：MARL vs.\ 静态基线（100回合）}{table.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 完整存活300\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces sols的代表性回合中各智能体的功率分配。上：科学智能体（紫色）在两次风暴（橙色和红色阴影区域）期间自主关闭实验。热控智能体（红色）维持供暖并在风暴期间略微降低功率，利用熔岩管热惯性。电力智能体（蓝色）保持接近标称水平的生命保障。中：生存稳定度指数$S(t)$的演化。下：电池储能的完整轨迹。}}{11}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:actions}{{3}{11}{完整存活300~sols的代表性回合中各智能体的功率分配。上：科学智能体（紫色）在两次风暴（橙色和红色阴影区域）期间自主关闭实验。热控智能体（红色）维持供暖并在风暴期间略微降低功率，利用熔岩管热惯性。电力智能体（蓝色）保持接近标称水平的生命保障。中：生存稳定度指数$S(t)$的演化。下：电池储能的完整轨迹。}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}步骤3：敏感性与故障分析}{11}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}参数扫描}{11}{subsubsection.5.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 静态智能体的参数敏感性。左：风暴$\tau $。中：电池容量。右：RTG基线功率。误差线为$\pm 1\sigma $。}}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:sensitivity}{{4}{11}{静态智能体的参数敏感性。左：风暴$\tau $。中：电池容量。右：RTG基线功率。误差线为$\pm 1\sigma $。}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}故障模式影响}{12}{subsubsection.5.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces 故障模式影响（各20回合，静态智能体）}}{12}{table.caption.9}\protected@file@percent }
+\newlabel{tab:failures}{{5}{12}{故障模式影响（各20回合，静态智能体）}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}生存概率曲面}{13}{subsubsection.5.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 静态智能体的生存概率曲面（$\tau $--电池容量平面）。等高线标注等生存水平。白色星号为基线配置（3,000\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces kWh, $\tau = 2.5$）。}}{13}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:surface}{{5}{13}{静态智能体的生存概率曲面（$\tau $--电池容量平面）。等高线标注等生存水平。白色星号为基线配置（3,000~kWh, $\tau = 2.5$）。}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}步骤4：消融实验——中心化评论家的作用}{13}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces 消融实验结果（各50回合）。\textbf  {注：}此处MAPPO死亡率为70\%，高于步骤2的62\%，原因在于消融实验使用不同的训练配置和评估种子集。两个数值均在同一实验条件下与各自基线对比。}}{13}{table.caption.11}\protected@file@percent }
+\newlabel{tab:ablation}{{6}{13}{消融实验结果（各50回合）。\textbf {注：}此处MAPPO死亡率为70\%，高于步骤2的62\%，原因在于消融实验使用不同的训练配置和评估种子集。两个数值均在同一实验条件下与各自基线对比。}{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 消融结果。左：平均生存时间。右：死亡率。中心化评论家相比独立PPO提供127.3\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces sol的提升。}}{14}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:ablation}{{6}{14}{消融结果。左：平均生存时间。右：死亡率。中心化评论家相比独立PPO提供127.3~sol的提升。}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}讨论}{14}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}习得策略的行为特征}{14}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}双峰结果分布}{15}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}协调何时变得必要}{15}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}结论}{15}{section.7}\protected@file@percent }
+\citation{gymnasium}
+\citation{pytorch}
+\bibcite{mappo}{1}
+\bibcite{ppo}{2}
+\bibcite{gae}{3}
+\bibcite{maddpg}{4}
+\bibcite{qmix}{5}
+\bibcite{mars_lava_tube}{6}
+\bibcite{mars_dust}{7}
+\bibcite{mars_isru}{8}
+\bibcite{nasa_ls}{9}
+\bibcite{mars_radiation}{10}
+\bibcite{kilopower}{11}
+\bibcite{gymnasium}{12}
+\bibcite{pytorch}{13}
+\bibcite{mars_thermal}{14}
+\bibcite{marl_survey}{15}
+\gdef \@abspage@last{17}

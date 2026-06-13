@@ -1,0 +1,53 @@
+[
+  {
+    "agent": "Random (lower bound)",
+    "n_episodes": 50,
+    "survival_sols_mean": 0.77,
+    "survival_sols_std": 0.27,
+    "survival_sols_min": 0.4,
+    "survival_sols_max": 1.95,
+    "S_final_mean": 0.7299,
+    "S_final_std": 0.0054,
+    "S_min_mean": 0.7298,
+    "S_min_worst": 0.7181,
+    "S_mean_of_means": 0.8125,
+    "total_reward_mean": -508.95,
+    "total_reward_std": 17.7,
+    "fatality_rate": 1.0,
+    "full_survival_rate": 0.0
+  },
+  {
+    "agent": "Static Rules",
+    "n_episodes": 50,
+    "survival_sols_mean": 96.39,
+    "survival_sols_std": 46.94,
+    "survival_sols_min": 60.25,
+    "survival_sols_max": 214.4,
+    "S_final_mean": 0.6691,
+    "S_final_std": 0.0966,
+    "S_min_mean": 0.6204,
+    "S_min_worst": 0.3997,
+    "S_mean_of_means": 0.8732,
+    "total_reward_mean": 5011.47,
+    "total_reward_std": 2566.71,
+    "fatality_rate": 1.0,
+    "full_survival_rate": 0.0
+  },
+  {
+    "agent": "Static Conservative",
+    "n_episodes": 50,
+    "survival_sols_mean": 85.52,
+    "survival_sols_std": 35.18,
+    "survival_sols_min": 8.8,
+    "survival_sols_max": 208.6,
+    "S_final_mean": 0.6929,
+    "S_final_std": 0.06,
+    "S_min_mean": 0.6582,
+    "S_min_worst": 0.4276,
+    "S_mean_of_means": 0.8474,
+    "total_reward_mean": 4214.25,
+    "total_reward_std": 2281.49,
+    "fatality_rate": 1.0,
+    "full_survival_rate": 0.0
+  }
+]

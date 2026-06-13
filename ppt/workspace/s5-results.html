@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #0A0E17; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  background: #0A0E17; font-family: Arial, sans-serif;
+}
+.top-accent { width: 100%; height: 4pt; background: #E8612A; }
+.main { flex: 1; display: flex; margin: 12pt 30pt 8pt 30pt; gap: 15pt; }
+.left { width: 310pt; }
+h2 { color: #FFFFFF; font-size: 20pt; margin: 0 0 6pt 0; }
+h3 { color: #E8612A; font-size: 11pt; margin: 6pt 0 3pt 0; }
+p { color: #B0B8C0; font-size: 9pt; margin: 2pt 0; line-height: 1.5; }
+b { color: #FF9A5C; }
+.highlight { color: #2AA9C9; font-size: 10pt; font-weight: bold; margin: 5pt 0; }
+table { border-collapse: collapse; margin: 5pt 0; width: 100%; }
+td, th { color: #B0B8C0; font-size: 9pt; padding: 6pt 8pt; border: 0.5pt solid #2A3A50; }
+th { background: #1A2740; color: #FF9A5C; }
+.accent { color: #E8612A; font-weight: bold; }
+.right { width: 350pt; display: flex; align-items: center; justify-content: center; }
+.img-box { width: 340pt; height: 220pt; background: #1A2740; border: 1pt solid #2A3A50; border-radius: 4pt; }
+</style>
+</head>
+<body>
+<div class="top-accent"></div>
+<div class="main">
+  <div class="left">
+    <h2>核心结果</h2>
+    <h3>和传统方法对比（50次蒙特卡洛评估）</h3>
+    <table>
+      <tr><th>指标</th><th>传统规则</th><th>我们的AI</th><th>提升</th></tr>
+      <tr><td>平均生存</td><td>96.4天</td><td><b>169.7天</b></td><td class="accent">+76%</td></tr>
+      <tr><td>完整存活300天</td><td>0%</td><td><b>38%</b></td><td>—</td></tr>
+      <tr><td>死亡率</td><td>100%</td><td>62%</td><td>−38pp</td></tr>
+    </table>
+    <h3>AI学到了什么？</h3>
+    <p>1. <b>提前预判</b>：检测风暴信号就关实验，比传统早10-15天</p>
+    <p>2. <b>灵活调整</b>：根据氧气/温度/电量同时判断</p>
+    <p>3. <b>互相利用</b>：暖气AI利用设备废热"搭便车"省电</p>
+    <p class="highlight">38%模拟中AI穿越两场沙尘暴活满300天，传统方法一次都没有。</p>
+  </div>
+  <div class="right">
+    <div id="img-5" class="placeholder" style="width: 340pt; height: 230pt;"></div>
+  </div>
+</div>
+</body>
+</html>

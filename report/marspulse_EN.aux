@@ -1,0 +1,91 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\citation{mars_radiation}
+\citation{mars_lava_tube}
+\citation{mars_dust}
+\citation{marl_survey}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction \& Research Background}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Mars Lava Tube Habitats}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}The Decision-Making Problem During Dust Storms}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Physical Models \& Parameter Justification}{4}{section.2}\protected@file@percent }
+\citation{kilopower}
+\citation{mars_thermal}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Survival Stability Index}{5}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:S}{{1}{5}{Survival Stability Index}{equation.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Solar Power Input}{5}{subsection.2.2}\protected@file@percent }
+\newlabel{eq:solar}{{2}{5}{Solar Power Input}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Thermal Dynamics}{5}{subsection.2.3}\protected@file@percent }
+\newlabel{eq:thermal}{{3}{5}{Thermal Dynamics}{equation.3}{}}
+\citation{mars_isru}
+\citation{nasa_ls}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Oxygen Mass Balance}{6}{subsection.2.4}\protected@file@percent }
+\newlabel{eq:o2}{{4}{6}{Oxygen Mass Balance}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Battery Energy Balance}{6}{subsection.2.5}\protected@file@percent }
+\newlabel{eq:battery}{{5}{6}{Battery Energy Balance}{equation.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}MARL Architecture}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Agent Decomposition}{6}{subsection.3.1}\protected@file@percent }
+\citation{mappo}
+\citation{gae}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}MAPPO with Action Bounds}{7}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:tanh}{{6}{7}{MAPPO with Action Bounds}{equation.6}{}}
+\newlabel{eq:ppo}{{7}{7}{MAPPO with Action Bounds}{equation.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Training Configuration}{7}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Training hyperparameters}}{7}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:hparams}{{1}{7}{Training hyperparameters}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Simulation Scenario}{8}{section.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Base configuration parameters}}{8}{table.caption.2}\protected@file@percent }
+\newlabel{tab:scenario}{{2}{8}{Base configuration parameters}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Step 1: Static Baseline}{9}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Step 1: Static baseline (50 episodes)}}{9}{table.caption.3}\protected@file@percent }
+\newlabel{tab:step1}{{3}{9}{Step 1: Static baseline (50 episodes)}{table.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Resource trajectories for static rule agents (representative episode with full 300-sol survival). The first storm (sol~60--120, orange shading) drives progressive battery decline; Storm~2 (sol~200--235, red shading) shows a second dip in available power. Temperature declines gradually through both storms toward the lower survivable bound. Both trajectory curves are visible across the full 0--250~sol time axis.}}{9}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:traj}{{1}{9}{Resource trajectories for static rule agents (representative episode with full 300-sol survival). The first storm (sol~60--120, orange shading) drives progressive battery decline; Storm~2 (sol~200--235, red shading) shows a second dip in available power. Temperature declines gradually through both storms toward the lower survivable bound. Both trajectory curves are visible across the full 0--250~sol time axis}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Step 2: MAPPO Training}{9}{subsection.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Training curves. Left: mean episode reward per epoch (light blue raw, dark blue moving average, dashed linear trend with $r = +0.775$). Right: critic loss converging steadily.}}{10}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:training}{{2}{10}{Training curves. Left: mean episode reward per epoch (light blue raw, dark blue moving average, dashed linear trend with $r = +0.775$). Right: critic loss converging steadily}{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Step 2: MARL vs.\ static baseline (100 episodes)}}{10}{table.caption.6}\protected@file@percent }
+\newlabel{tab:step2}{{4}{10}{Step 2: MARL vs.\ static baseline (100 episodes)}{table.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Agent power allocations during a representative episode with full 300-sol survival. Top: the Science Agent (purple) shuts down experiments during both storms (orange and red shaded regions). The Thermal Agent (red) maintains heating with modest reductions during storms, exploiting the lava tube's thermal inertia. The Power Agent (blue) holds life support near nominal levels. Middle: evolution of the Survival Stability Index $S(t)$. Bottom: battery state-of-charge across the full episode.}}{11}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:actions}{{3}{11}{Agent power allocations during a representative episode with full 300-sol survival. Top: the Science Agent (purple) shuts down experiments during both storms (orange and red shaded regions). The Thermal Agent (red) maintains heating with modest reductions during storms, exploiting the lava tube's thermal inertia. The Power Agent (blue) holds life support near nominal levels. Middle: evolution of the Survival Stability Index $S(t)$. Bottom: battery state-of-charge across the full episode}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Step 3: Sensitivity \& Failure Analysis}{11}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Parameter Sweeps}{11}{subsubsection.5.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Parameter sensitivity for the static agent. Left: storm $\tau $. Center: battery capacity. Right: RTG baseline power. Error bars $\pm 1\sigma $.}}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:sensitivity}{{4}{11}{Parameter sensitivity for the static agent. Left: storm $\tau $. Center: battery capacity. Right: RTG baseline power. Error bars $\pm 1\sigma $}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Failure Mode Impact}{12}{subsubsection.5.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Failure mode impact (20 episodes each, static agent)}}{12}{table.caption.9}\protected@file@percent }
+\newlabel{tab:failures}{{5}{12}{Failure mode impact (20 episodes each, static agent)}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Survival Surface}{13}{subsubsection.5.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Survival surface over $\tau $ and battery capacity for the static agent. Contours show iso-survival levels. The white star marks the baseline configuration (3,000~kWh, $\tau = 2.5$).}}{13}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:surface}{{5}{13}{Survival surface over $\tau $ and battery capacity for the static agent. Contours show iso-survival levels. The white star marks the baseline configuration (3,000~kWh, $\tau = 2.5$)}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Step 4: Ablation --- What Does the Central Critic Buy?}{13}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Ablation results (50 episodes each). \textbf  {Note:} MAPPO fatality is 70\% here vs.\ 62\% in Step~2 because the ablation experiment uses different training configurations and evaluation seed sets. Both values are compared against baselines within their respective experiments.}}{13}{table.caption.11}\protected@file@percent }
+\newlabel{tab:ablation}{{6}{13}{Ablation results (50 episodes each). \textbf {Note:} MAPPO fatality is 70\% here vs.\ 62\% in Step~2 because the ablation experiment uses different training configurations and evaluation seed sets. Both values are compared against baselines within their respective experiments}{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Ablation results. Left: mean survival. Right: fatality rates. The centralized critic provides a 127.3-sol improvement over independent PPO.}}{14}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:ablation}{{6}{14}{Ablation results. Left: mean survival. Right: fatality rates. The centralized critic provides a 127.3-sol improvement over independent PPO}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{14}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}What the Learned Policy Does Differently}{14}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The Bimodal Outcome Distribution}{15}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}When Coordination Becomes Necessary}{15}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{15}{section.7}\protected@file@percent }
+\citation{gymnasium}
+\citation{pytorch}
+\bibcite{mappo}{1}
+\bibcite{ppo}{2}
+\bibcite{gae}{3}
+\bibcite{maddpg}{4}
+\bibcite{qmix}{5}
+\bibcite{mars_lava_tube}{6}
+\bibcite{mars_dust}{7}
+\bibcite{mars_isru}{8}
+\bibcite{nasa_ls}{9}
+\bibcite{mars_radiation}{10}
+\bibcite{kilopower}{11}
+\bibcite{gymnasium}{12}
+\bibcite{pytorch}{13}
+\bibcite{mars_thermal}{14}
+\bibcite{marl_survey}{15}
+\gdef \@abspage@last{17}

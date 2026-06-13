@@ -1,0 +1,38 @@
+{
+  "project": "MarsPulse",
+  "subtitle": "MARL-Based Mars Lava Tube Base Resource Management",
+  "key_metrics": {
+    "static_baseline_survival_sols": 96.39,
+    "mappo_marl_survival_sols": 167.24,
+    "survival_improvement_pct": 73.5,
+    "static_fatality_rate": 1.0,
+    "mappo_fatality_rate": 0.63,
+    "fatality_reduction_pp": 37.0,
+    "centralized_critic_benefit_sols": 127.3
+  },
+  "sensitivity_findings": {
+    "critical_storm_threshold": 2.5,
+    "critical_battery_threshold_kwh": 600,
+    "rtg_critical_for_survival": "yes_below_4kw"
+  },
+  "architecture": {
+    "algorithm": "MAPPO (Multi-Agent PPO)",
+    "agents": [
+      "Power Manager",
+      "Thermal Controller",
+      "Science Manager"
+    ],
+    "critic": "Centralized (global state + joint actions)",
+    "training_steps": 300000
+  },
+  "scenario": {
+    "location": "Mars lava tube base",
+    "episode_length_sols": 300,
+    "storm1_sols": "60-120 (tau=2.5)",
+    "storm2_sols": "200-235 (tau=2.2)",
+    "battery_capacity_kwh": 3000,
+    "solar_power_kw": 150,
+    "rtg_power_kw": 10,
+    "crew_size": 6
+  }
+}

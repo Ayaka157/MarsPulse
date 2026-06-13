@@ -1,0 +1,22 @@
+{
+  "Static Rules": {
+    "mean": 114.09700000000308,
+    "std": 73.76849626365913,
+    "fatal_rate": 0.92
+  },
+  "Single-Agent PPO": {
+    "mean": 2.5419999999999985,
+    "std": 0.24440949245068164,
+    "fatal_rate": 1.0
+  },
+  "Independent PPO (no central critic)": {
+    "mean": 2.4009999999999994,
+    "std": 0.2141237959685936,
+    "fatal_rate": 1.0
+  },
+  "MAPPO (centralized critic)": {
+    "mean": 129.7290000000106,
+    "std": 122.15073806164169,
+    "fatal_rate": 0.7
+  }
+}

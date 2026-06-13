@@ -1,0 +1,47 @@
+{
+  "single": {
+    "electrolysis_degraded": {
+      "mean": 83.34749999999862,
+      "std": 33.81499842895435
+    },
+    "heater_fault": {
+      "mean": 81.79749999999994,
+      "std": 52.20236698417761
+    },
+    "battery_cell_failure": {
+      "mean": 115.87000000000407,
+      "std": 80.03104928714727
+    },
+    "habitat_leak": {
+      "mean": 83.22749999999974,
+      "std": 44.52200151330104
+    }
+  },
+  "double": {
+    "electrolysis_degraded+heater_fault": {
+      "mean": 110.03500000000244,
+      "std": 68.16519291398762
+    },
+    "electrolysis_degraded+battery_cell_failure": {
+      "mean": 90.18249999999921,
+      "std": 41.28555823469408
+    },
+    "electrolysis_degraded+habitat_leak": {
+      "mean": 85.59749999999855,
+      "std": 34.17663483654007
+    },
+    "heater_fault+battery_cell_failure": {
+      "mean": 99.9550000000012,
+      "std": 63.57285171361299
+    },
+    "heater_fault+habitat_leak": {
+      "mean": 74.22500000000034,
+      "std": 52.27549736732107
+    },
+    "battery_cell_failure+habitat_leak": {
+      "mean": 107.93000000000124,
+      "std": 58.81995919754433
+    }
+  },
+  "baseline": 117.96750000000365
+}

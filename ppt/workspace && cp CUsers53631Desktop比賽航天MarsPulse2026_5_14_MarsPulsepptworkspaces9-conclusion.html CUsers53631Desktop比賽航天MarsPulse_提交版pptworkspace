@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #0A0E17; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  background: #0A0E17; font-family: Arial, sans-serif;
+}
+.top-accent { width: 100%; height: 4pt; background: #E8612A; }
+.main { flex: 1; display: flex; margin: 12pt 30pt 8pt 30pt; gap: 15pt; }
+.left { width: 330pt; }
+h2 { color: #FFFFFF; font-size: 20pt; margin: 0 0 6pt 0; }
+h3 { color: #E8612A; font-size: 11pt; margin: 6pt 0 3pt 0; }
+p { color: #B0B8C0; font-size: 9pt; margin: 2pt 0; line-height: 1.5; }
+b { color: #FF9A5C; }
+.big-idea { color: #2AA9C9; font-size: 10pt; font-weight: bold; margin: 5pt 0; }
+.right { width: 340pt; display: flex; align-items: center; justify-content: center; }
+.img-box { width: 330pt; height: 220pt; background: #1A2740; border: 1pt solid #2A3A50; border-radius: 4pt; }
+</style>
+</head>
+<body>
+<div class="top-accent"></div>
+<div class="main">
+  <div class="left">
+    <h2>更多发现</h2>
+    <h3>"决策天花板"——电池再大也没用</h3>
+    <p>电池从1000翻到5000度电，传统规则下<b>生存全约118天不变</b>——因为规则是"电低于15%才关实验"，从不知道提前省电。</p>
+    <p class="big-idea">瓶颈在决策方式，不在硬件。我们称之为"决策天花板"。</p>
+    <h3>最危险的故障组合</h3>
+    <p>暖气和舱体同时坏最危险（热崩溃），热量流失比补充快。提醒：<b>保温系统必须有备份</b>。</p>
+  </div>
+  <div class="right">
+    <div id="img-7" class="placeholder" style="width: 330pt; height: 230pt;"></div>
+  </div>
+</div>
+</body>
+</html>
